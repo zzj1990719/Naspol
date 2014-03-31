@@ -1,0 +1,95 @@
+/* The hole webside style css*/
+
+
+/***
+Page container
+***/
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+/***
+Page footer
+***/
+.footer {
+  padding: 10px 20px 5px 20px; 
+  font-size: 12px;
+}
+
+.footer:after,
+.footer:before {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.footer:after {
+  clear: both;
+}
+
+.footer .footer-inner {
+  float: left;
+  display: inline-block;
+}
+
+.footer .footer-tools {
+  float: right;
+  display: inline-block;
+}
+
+.footer .footer-tools .go-top { 
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -4px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  padding: 2px 6px 0px 6px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.footer .footer-tools .go-top i {
+  font-size: 22px;
+  margin-bottom: 5px; 
+}
+
+.footer_pic {
+margin-top: -4px;
+margin-right: 0px;
+margin-bottom: 0px;
+font-size: 20px;
+padding: 2px 6px 0px 6px;
+height: 30px;
+width: 35px;
+border-radius: 60%;
+}
+
+/***
+Page icon
+***/
+
+[class^="icon-"],
+[class*=" icon-"]{
+  display: inline-block;
+  margin-top: 1px;
+  font-size: 14px;
+  *margin-right: .3em;
+}
+
+
+/***
+button
+***/
+.btn-lg{
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.33;
+border-radius: 6px;
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}

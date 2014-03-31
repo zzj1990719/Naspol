@@ -1,0 +1,34 @@
+<%= javascript_include_tag :defaults %>
+<% provide(:title, 'Home') %>
+<h1>Sample App</h1>
+<p>
+  This is the home page for the
+  <a>Ruby on Rails Tutorial</a>      
+  sample application.
+  <div class="row">
+	<h1>My websites</h1>
+	<% if current_user?(@user) %>
+	<% @websites.each do |website| %>
+	  <div class="row">
+	  <%if UsersWebsites.find_by(user_id: current_user.id, website_id: website.id) %>
+	  	  <%= website.id %> <%= website.name %> <%= website.brief %>
+		  <% @web.id = website.id %>
+	  <%= render 'unfollow'%>
+	  <%else%>
+	  	  <%= website.id %> <%= website.name %> <%= website.brief %>
+		  	  <% @web.id = website.id %>
+	  <%= render 'follow'%>
+	  <%end%>
+	  </div>
+	<%end%>
+	<%end%>
+  </div>
+  
+  <div class="row">
+  	<button class="btn-lg" data-toggle="modal" data-target="#myPlus" id="plus">
+  		<span>+</span>
+    </button>
+    <%= render 'plusmodal'%>
+  </div>
+</p>
+<%= params.inspect %>

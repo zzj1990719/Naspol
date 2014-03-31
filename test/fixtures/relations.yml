@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  f_page_id: 1
+  f_website_id: 1
+  f_remind_id: 1
+  f_recommend_id: 1
+  create_page_id: 1
+
+two:
+  user_id: 1
+  f_page_id: 1
+  f_website_id: 1
+  f_remind_id: 1
+  f_recommend_id: 1
+  create_page_id: 1

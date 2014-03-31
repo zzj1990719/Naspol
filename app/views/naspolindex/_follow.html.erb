@@ -1,0 +1,9 @@
+<div id="<%= @web.id %>">
+<%= form_for(@web ,remote: true) do |f| %>
+	  <%= f.label :web_type%>
+	  <%= f.text_field :web_type %>
+	  <%= f.label :id%>
+	  <%= f.hidden_field :id %>
+      <%= f.submit "Follow", class: "btn btn-large btn-primary" %>
+      <% end %> 
+</div>	  

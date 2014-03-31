@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  web_type: MyString
+  sub_type: MyString
+  name: MyString
+  url: MyString
+  brief: MyString
+  grade5: 1
+  grade4: 1
+  grade3: 1
+  grade2: 1
+  grade1: 1
+  comment: MyString
+  refer_id: 1
+  collect: 1
+
+two:
+  web_type: MyString
+  sub_type: MyString
+  name: MyString
+  url: MyString
+  brief: MyString
+  grade5: 1
+  grade4: 1
+  grade3: 1
+  grade2: 1
+  grade1: 1
+  comment: MyString
+  refer_id: 1
+  collect: 1

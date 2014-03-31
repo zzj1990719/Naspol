@@ -1,0 +1,27 @@
+<% provide(:title, 'Mypage') %>
+<h1>My page</h1>
+<%= @user.name %>, <%= @user.email %>
+<div class="row">
+	<h1>My websites</h1>
+	<% @websites.each do |website| %>
+	  <%= website.name %> <%= website.brief %>
+	<%end%>
+</div>
+<div class="row">
+	<h1>My pages</h1>
+	<% @pages.each do |page| %>
+	  <%= page.content %> <%= page.keyword %>
+	<%end%>
+</div>
+<div class="row">
+	<h1>My reminds</h1>
+	<% @reminds.each do |remind| %>
+	  <%= remind.website %> <%= remind.url %>
+	<%end%>
+</div>
+<div class="row">
+	<h1>My recommends</h1>
+	<% @recommends.each do |recommend| %>
+	  <%= recommend.websit_id %> <%= recommend.page_id %>
+	<%end%>
+</div>
